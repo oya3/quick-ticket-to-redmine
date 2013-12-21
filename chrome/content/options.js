@@ -43,13 +43,13 @@ Options.prototype = {
                              if(target.selected) {
                                document.getElementById("isApi").removeAttribute("disabled");
                              }else{
-                               document.getElementById("isApi").setAttribute("disabled", true);
+                               //document.getElementById("isApi").setAttribute("disabled", true);
                              }
                            } else {
                              if(target.selected) {
                                document.getElementById("isBasic").removeAttribute("disabled");
                              }else{
-                               document.getElementById("isBasic").setAttribute("disabled", true);
+                               //document.getElementById("isBasic").setAttribute("disabled", true);
                              }
                            }
                          },

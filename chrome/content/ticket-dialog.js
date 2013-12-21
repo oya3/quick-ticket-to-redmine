@@ -21,6 +21,7 @@ show: function(args) {
 onLoad: function() {
 	
 	try {
+		
 		//引数からメール情報を取得する
 		var nsIMsgDBHdr = window.arguments[0];
 

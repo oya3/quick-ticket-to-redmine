@@ -47,7 +47,7 @@
         <caption label="&prefwindow.auth.label;"/>
         <radiogroup id="auth-radiogroup" preference="authmethod">
           <vbox id="api-vbox">
-            <radio id="api-radio" label="&prefwindow.auth.apilabel;" value="0" disabled="true"/>
+            <radio id="api-radio" label="&prefwindow.auth.apilabel;" value="0"/>
             <textbox id="redmineacceskey_textbox" preference="redmineacceskeypref" observes="isApi"/>
             <label value="&prefwindow.auto.example;" observes="isApi"/>
           </vbox>
