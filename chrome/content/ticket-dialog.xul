@@ -50,6 +50,7 @@
         <label control="project-box" value="&ticket-dialog.project;:"/>
         <hbox id="project-box" flex="1">
           <menulist id="project-list"
+            oncommand="ticketDialog.onCommandReloadUsersAndTrackers(event)"
             width="300"
             disable-on-readonly="true">
             <menupopup></menupopup>
@@ -75,6 +76,20 @@
       </row>
 
       <row align="center">
+        <label control="version-box" value="&ticket-dialog.version;:"/>
+        <hbox id="version-box" flex="1">
+          <menulist id="version-list"
+            width="300"
+            disable-on-readonly="true">
+            <menupopup></menupopup>
+          </menulist>
+          <hbox align="center">
+            <image src="chrome://quick-ticket-to-redmine/skin/loading.gif" id="version-loading" width="16" height="16"/>
+          </hbox>
+        </hbox>
+      </row>
+      
+      <row align="center">
         <label control="assigned-to-box" value="&ticket-dialog.assigned-to;:"/>
         <hbox id="assigned-to-box" flex="1">
           <menulist id="assigned-to-list"
@@ -85,6 +100,13 @@
           <hbox align="center">
             <image src="chrome://quick-ticket-to-redmine/skin/loading.gif" id="assigned-to-loading" width="16" height="16"/>
           </hbox>
+        </hbox>
+      </row>
+
+      <row align="center">
+        <label control="parent_issue_id-box" value="&ticket-dialog.parent_issue_id;:"/>
+        <hbox align="center">
+          <textbox id="parent_issue_id-box" style="width: 4.0em;"/>
         </hbox>
       </row>
 
@@ -103,7 +125,7 @@
       <row align="center">
         <label control="estimated-hours-box" value="&ticket-dialog.estimated-hours;:"/>
         <hbox align="center">
-          <textbox id="estimated-hours-box" style="width: 4.0em;"/><label value="時間"/>
+          <textbox id="estimated-hours-box" style="width: 4.0em;"/><label value="H"/>
         </hbox>
       </row>
 

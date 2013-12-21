@@ -2,7 +2,9 @@
 <!ENTITY ticket-dialog.title "題名">
 <!ENTITY ticket-dialog.project "プロジェクト">
 <!ENTITY ticket-dialog.tracker "トラッカー">
+<!ENTITY ticket-dialog.version "対象バージョン">
 <!ENTITY ticket-dialog.assigned-to "担当者">
+<!ENTITY ticket-dialog.parent_issue_id "親チケット">
 <!ENTITY ticket-dialog.start-date "開始日">
 <!ENTITY ticket-dialog.end-date "期日">
 <!ENTITY ticket-dialog.estimated-hours "予定工数">

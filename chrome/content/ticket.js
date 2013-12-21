@@ -11,6 +11,8 @@ Ticket.prototype = {
                 this.start_date = null;
                 this.due_date = null;
                 this.estimated_hours = null;
+                this.parent_issue_id = null;
+                this.version_id = null;
 
                 if (nsIMsgDBHdr) {
 
@@ -90,6 +92,17 @@ Ticket.prototype = {
                          string = string + '<![CDATA[' + this.estimated_hours + ']]>';
                          string = string + '</estimated_hours>';
                        }
+                       if(this.parent_issue_id){
+                         string = string + '<parent_issue_id>';
+                         string = string + '<![CDATA[' + this.parent_issue_id + ']]>';
+                         string = string + '</parent_issue_id>';
+                       }
+                       if(this.version_id){
+                         string = string + '<fixed_version_id>';
+                         string = string + '<![CDATA[' + this.version_id + ']]>';
+                         string = string + '</fixed_version_id>';
+                       }
+	  
                        string = string + '</issue>';
 
                        return string;
